@@ -129,27 +129,7 @@ namespace softwear
   * Permission    : RW
   *******************************************************************************/
   const FLASH_PAGE    0x40
-
-  /*******************************************************************************
-
-  /*
-  * 
-  */
-
-  function writeLSM6DS3Reg(reg: number, format: NumberFormat)
-  {
-     pins.i2cWriteNumber(LSM6DS3Addr, reg, NumberFormat.UInt8LE, false)
-     let val = pins.i2cReadNumber(LSM6DS3Addr, format, false)
-     return val
-  }
-  
-  function readLSM6DS3Reg(reg: number, format: NumberFormat)
-  {
-    pins.i2cWriteNumber(LSM6DS3Addr, reg, NumberFormat.UInt8LE, false)
-    let val = pins.i2CReadNumber(LSM6DS3Addr, format, false) 
-    return val
-  }
-        
+ 
   //% weight=41 blockGap=8 blockId="accelX" block="accelX"    
   export function accelX(): number
   {
