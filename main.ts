@@ -140,6 +140,7 @@ namespace softwear
   //% weight=41 blockGap=8 blockId="accelX" block="accelX"    
   export function accelX(): number
   {
-    return 5200
+    let accelx = readCCSReg(LSM6DS3_ACC_GYRO_OUTX_L_XL, NumberFormat.UInt16LE, false)
+    return accelx
   }
 }
