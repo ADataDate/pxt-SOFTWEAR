@@ -157,3 +157,4 @@ export function accelX(): number{
     let accelx = readLSM6DS3Reg(LSM6DS3_ACC_GYRO_OUTX_L_XL, NumberFormat.UInt16LE, false)
     return accelx
 }
+}
