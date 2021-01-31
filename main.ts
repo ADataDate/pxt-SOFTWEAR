@@ -119,6 +119,20 @@ namespace softwear
   const LSM6DS3_ACC_GYRO_MAG_OFFY_H                    = 0x30
   const LSM6DS3_ACC_GYRO_MAG_OFFZ_L                    = 0x31
   const LSM6DS3_ACC_GYRO_MAG_OFFZ_H                    = 0x32
+  
+  function writeLSM6DS3Reg(reg: number, format: NumberFormat)
+  {
+    pins.i2cWriteNumber(LSM6DS3Addr, reg, NumberFormat.UInt8LE, false)
+    let val = pins.i2cReadNumber(LSM6DS3Addr, format, false)
+    return val
+  }
+  
+  function readLSM6DS3Reg(reg: number, format: NumberFormat)
+  {
+    pins.i2cWriteNumber(LSM6DS3Addr, reg, NumberFormat.UInt8LE, false)
+    let val = pins.i2CReadNumber(LSM6DS3Addr, format, false) 
+    return val
+  }
 
   //% weight=41 blockGap=8 blockId="accelX" block="accelX"    
   export function accelX(): number
