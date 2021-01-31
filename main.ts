@@ -151,7 +151,8 @@ function readLSM6DS3Reg(reg: number, format: NumberFormat)
       return val
     }
         
-    
+
+//% weight=41 blockGap=8 blockId="SOFTWEAR:motion Accel x" block="accelX"    
 export function accelX(): number{
     let accelx = readLSM6DS3Reg(LSM6DS3_ACC_GYRO_OUTX_L_XL, NumberFormat.UInt16LE, false)
     return accelx
