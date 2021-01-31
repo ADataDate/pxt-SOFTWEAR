@@ -3,12 +3,13 @@
     "version": "0.0.0",
     "description": "",
     "dependencies": {
-        "adafruit-metro-m0-express": "*"
+        "adafruit-trinket-m0": "*"
     },
     "files": [
         "README.md",
         "main.blocks",
-        "main.ts"
+        "main.ts";
+        
     ],
     "testFiles": [
         "test.ts"
