@@ -4,6 +4,6 @@ namespace softwear
   //% weight=41 blockGap=8 blockId="accelX" block="accelX"    
   export function accelX(): number
   {
-    return 0
+    return 5200
   }
 }
