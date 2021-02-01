@@ -1,4 +1,4 @@
-//% color=#f44242 icon="\u26C8"
+//% color=#f44242 icon="\u9819"
 namespace softwear
 {
   const LSM6DS3Addr                       = 0x6B
