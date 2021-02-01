@@ -139,37 +139,37 @@ namespace softwear
 
   //% weight=41 blockGap=8 blockId="accelX" block="accelX"    
   export function accelX(): number {
-    let accelx = readLSM6DS3Reg(LSM6DS3_ACC_GYRO_OUTX_L_XL, NumberFormat.UInt16LE)
+    let accelx = readLSM6DS3Reg(LSM6DS3_ACC_GYRO_OUTX_L_XL, NumberFormat.Int16LE)
     return accelx
   }
 
   //% weight=41 blockGap=8 blockId="accelY" block="accelY"    
   export function accelY(): number {
-    let accely = readLSM6DS3Reg(LSM6DS3_ACC_GYRO_OUTY_L_XL, NumberFormat.UInt16LE)
+    let accely = readLSM6DS3Reg(LSM6DS3_ACC_GYRO_OUTY_L_XL, NumberFormat.Int16LE)
     return accely
   }
 
   //% weight=41 blockGap=8 blockId="accelZ" block="accelZ"    
   export function accelZ(): number {
-    let accelz = readLSM6DS3Reg(LSM6DS3_ACC_GYRO_OUTZ_L_XL, NumberFormat.UInt16LE)
+    let accelz = readLSM6DS3Reg(LSM6DS3_ACC_GYRO_OUTZ_L_XL, NumberFormat.Int16LE)
     return accelz
   }
 
   //% weight=41 blockGap=8 blockId="gyroX" block="gyroX"    
   export function gyroX(): number {
-    let gyrox = readLSM6DS3Reg(LSM6DS3_ACC_GYRO_OUTX_L_G, NumberFormat.UInt16LE)
+    let gyrox = readLSM6DS3Reg(LSM6DS3_ACC_GYRO_OUTX_L_G, NumberFormat.Int16LE)
     return gyrox
   }
 
   //% weight=41 blockGap=8 blockId="gyroY" block="gyroY"    
   export function gyroY(): number {
-    let gyroy = readLSM6DS3Reg(LSM6DS3_ACC_GYRO_OUTY_L_G, NumberFormat.UInt16LE)
+    let gyroy = readLSM6DS3Reg(LSM6DS3_ACC_GYRO_OUTY_L_G, NumberFormat.Int16LE)
     return gyroy
   }
 
   //% weight=41 blockGap=8 blockId="gyroZ" block="gyroZ"    
   export function gyroZ(): number {
-    let gyroz = readLSM6DS3Reg(LSM6DS3_ACC_GYRO_OUTZ_L_G, NumberFormat.UInt16LE)
+    let gyroz = readLSM6DS3Reg(LSM6DS3_ACC_GYRO_OUTZ_L_G, NumberFormat.Int16LE)
     return gyroz
   }
 
