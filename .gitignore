@@ -9,3 +9,9 @@ _site
 *.tgz
 .header.json
 .simstate.json
+tsconfig.json
+.vscode/
+enums.d.ts
+pins.ts
+pxt-maker/
+pxt-microbit/
