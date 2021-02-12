@@ -3,7 +3,7 @@ declare interface Math {
 }
 
 
-//% color=#f44242 icon="\u9819"
+//% color=#f44242 icon="\u265B"
 namespace softwear
 {
   const LSM6DS3Addr                       = 0x6B
