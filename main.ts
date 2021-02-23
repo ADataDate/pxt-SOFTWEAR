@@ -800,17 +800,17 @@ function command(cmd: number) {
     left = 2,
    }
 
-   //% blockId="head_tilt" block="%head_tilt"
+   //% blockId="head_tilt" block="head_tilt"
 export function head_tilt(head_tilt : tilt_dir) : void {
    
     }
 
-     //% blockId="spin" block="%spin"
+     //% blockId="spin" block="spin"
 export function spin(spin : spin_dir) : void {
    
 }
 
-   //% blockId="pop-up" block="%pop_up"
+   //% blockId="pop-up" block="pop_up"
    export function pop_up (): void {
    
 }
