@@ -801,17 +801,20 @@ function command(cmd: number) {
    }
 
    //% blockId="head_tilt" block="head_tilt"
-export function head_tilt(head_tilt : tilt_dir) : void {
+export function head_tilt(head_tilt : tilt_dir) : number {
+    return 0
    
     }
 
      //% blockId="spin" block="spin"
-export function spin(spin : spin_dir) : void {
+export function spin(spin : spin_dir) : number {
+    return 0
    
 }
 
    //% blockId="pop-up" block="pop_up"
-   export function pop_up (): void {
+   export function pop_up (): number {
+       return 0
    
 }
 
