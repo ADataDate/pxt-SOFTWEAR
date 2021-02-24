@@ -787,44 +787,4 @@ function command(cmd: number) {
     return whoAmI
   }
 
-  //blocks for gesture detection 
-   enum tilt_dir{
-    //% block="forward"
-    forward = 1,
-    //% block="back"    
-    back = 2,
-    //% block="right"
-    right = 3, 
-    //% block="left"    
-    left = 4,
-   }
-
-   enum spin_dir{
-    right = 1,
-    left = 2,
-   }
-
-   //% blockId="head_tilt" block="head_tilt"
-export function head_tilt(tilt : tilt_dir) : string {
-    switch(tilt_dir){
-        case tilt_dir.forward: return "forward";
-        case tilt_dir.back: return "back";
-
-    }
-   
-    }
-
-     //% blockId="spin" block="spin"
-export function spin(spin : spin_dir) : number {
-    return 0
-   
-}
-
-   //% blockId="pop-up" block="pop_up"
-   export function pop_up (): number {
-       return 0
-   
-}
-
-
 }
